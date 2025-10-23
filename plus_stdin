@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+# SPDX-FileCopyrightText: 2025 Reoto Koya <s24c1053jd@s.chibakoudai.jp>
 import sys
 
 ans = 0.0
