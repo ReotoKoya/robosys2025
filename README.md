@@ -1,11 +1,45 @@
-# robosys2025
-ロボットシステム学課題１
+# 素因数分解コマンド
+
+##目次
+- 1.概要
+- 2.必要なソフトウェア
+- 3.クローン方法
+- 4.使用方法
+- 5.テスト環境
+- 6.ライセンス
+
+##概要
+入力した正の整数を素因数分解し、素数の積で表す。
+見やすさのために素数の積はスペースで区切って昇順に並べ、出力する。
+
+##必要なソフトウェア
+- Python
+  - テスト済みバーージョン:(3.13.5)
+
+##クローン方法
+- 以下のコマンドを実行して、ホームディレクトリにクローンしてください。
+  - git clone https://github.com/ReotoKoya/robosys2025.git
+
+##使用方法
+- 入力するコマンドは以下の通りである。
+  - $ echo <正の整数> | ./as_f
+###実行例
+- 100を入力した時の実行例
+  - $ echo 100 | ./as_f
+  - 2 2 5 5
+　
+###注意
+- 0や１などの素数でない数字や文字列を入力した場合は処理されず、スキップされます。
+  - $ echo 0 | ./as_f
+  - $
+  
+##テスト環境
+- Ubuntu 22.04 LTS 
+
+
+
+
+##著作権 ・ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
-- このパッケージは，由来のコード（© 2025 Ryuichi Ueda）を利用しています．
-- このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
-    - [ryuichiueda/my_slides robosys_2025](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2025)
-
-#plusコマンド
-![test](https://github.com/ReotoKoya/robosys2025/actions/workflows/test.yml/badge.svg)
-
-@ 2025 Reoto Koya
+- AI(Google Gemini)を使用して、プログラムのエラーを修正しました。
+- @ 2025 Reoto Koya
