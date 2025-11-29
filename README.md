@@ -1,6 +1,6 @@
 # 素因数分解コマンド
 
-![test](https://github.com/Reoto Koya/robosys2025/actions/workflows/test.yml/badge.svg)
+![test](https://github.com/ReotoKoya/robosys2025/actions/workflows/test.yml/badge.svg)
 
 ## 目次
 - 1.概要
