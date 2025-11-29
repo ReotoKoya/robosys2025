@@ -20,22 +20,35 @@
 
 ## クローン方法
 - 以下のコマンドを実行して, ホームディレクトリにクローンしてください. 
-  - git clone https://github.com/ReotoKoya/robosys2025.git
+  '''
+  git clone https://github.com/ReotoKoya/robosys2025.git
+  ''' 
 
 ## 使用方法
 - 入力するコマンドは以下の通りである.
-  - $ echo <正の整数> | ./as_f
+  '''
+  $ echo <正の整数> | ./as_f
+  '''
+
 ### 実行例
 - 100を入力した時の実行例
-  - $ echo 100 | ./as_f
-  - 2 2 5 5
+
+  ''' 
+  $ echo 100 | ./as_f
+  2 2 5 5
+  ''' 
 　
 ### 注意
 - 0や１などの素数でない数字や文字列を入力した場合は処理されず, スキップされます. 
-  - $ echo 0 | ./as_f
-  - $
-  - $ echo abc | ./as_f
-  - $
+  ''' 
+  $ echo 0 | ./as_f
+  $
+  ''' 
+
+  '''
+  $ echo abc | ./as_f
+  $
+  '''
  
 ## テスト環境
 - Ubuntu 22.04 LTS on Windows
