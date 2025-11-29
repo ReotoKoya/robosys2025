@@ -1,4 +1,5 @@
 # 素因数分解コマンド
+
 ![test](https://github.com/Reoto Koya/robosys2025/actions/workflows/test.yml/badge.svg)
 
 ## 目次
@@ -35,7 +36,7 @@
   - $
   
 ## テスト環境
-- Ubuntu 22.04 LTS 
+- Ubuntu 22.04 LTS on Windows
 
 
 
