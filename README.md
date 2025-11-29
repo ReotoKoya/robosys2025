@@ -1,5 +1,5 @@
 # 素因数分解コマンド
-![test](http://github.com/Reoto Koya/robosys2025/actions/workflows/test.yml/badge.svg)
+![test](https://github.com/Reoto Koya/robosys2025/actions/workflows/test.yml/badge.svg)
 
 ## 目次
 - 1.概要
@@ -22,7 +22,7 @@
   - git clone https://github.com/ReotoKoya/robosys2025.git
 
 ## 使用方法
-- 入力するコマンドは以下の通りである。
+- 入力するコマンドは以下の通りである.
   - $ echo <正の整数> | ./as_f
 ### 実行例
 - 100を入力した時の実行例
