@@ -1,7 +1,5 @@
 # 素因数分解コマンド
 
-![test](https://github.com/ReotoKoya/robosys2025/actions/workflows/test.yml/badge.svg)
-
 ## 目次
 - 1.概要
 - 2.必要なソフトウェア
@@ -56,10 +54,9 @@
 ## テスト環境
 - Ubuntu 22.04 LTS on Windows
 
-
-
+## GitHub Actions の結果
+![test](https://github.com/ReotoKoya/robosys2025/actions/workflows/test.yml/badge.svg)
 
 ## 著作権 ・ライセンス
 - このソフトウェアパッケージは, 3条項BSDライセンスの下, 再頒布および使用が許可されます．
-- AI(Google Gemini)を使用して, プログラムのエラーを修正しました.
 - @ 2025 Reoto Koya
