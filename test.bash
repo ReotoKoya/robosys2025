@@ -40,4 +40,19 @@ expected=$'2 5\n7'
     exit 1
 }
 
+# 6) 負の整数: -10 → 出力なし
+result=$(echo -10 | ./as_f)
+[ "$result" = "" ] || {
+    echo "Test3 failed (-10): got '$result'"
+    exit 1
+}
+
+# 7) 小数: 0.1 → 出力なし
+result=$(echo 0.1 | ./as_f)
+[ "$result" = "" ] || {
+    echo "Test3 failed (0.1): got '$result'"
+    exit 1
+}
+
+
 echo "All tests passed"
