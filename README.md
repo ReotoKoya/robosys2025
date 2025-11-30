@@ -84,4 +84,5 @@
 - @ 2025 Reoto Koya
 
 ## 参考資料
-- [ 第 6 回 : ソフトウェアのテスト]  https://ryuichiueda.github.io/slides_marp/robosys2025/lesson6.html#1
+- [ 第 6 回 : ソフトウェアのテスト]  https://ryuichiueda.github.io/slides_marp/robosys2025/lesson6.html
+- [ 第 7 回 : GitHub でのテスト ] https://ryuichiueda.github.io/slides_marp/robosys2025/lesson7.html
