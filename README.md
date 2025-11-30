@@ -3,7 +3,7 @@
 ## 目次
 - 1.概要
 - 2.必要なソフトウェア
-- 3.クローン方法
+- 3.準備
 - 4.使用方法
 - 5.テスト環境
 - 6.GitHub Acitons の結果
@@ -20,13 +20,14 @@
   - テスト済みバーージョン: 3.7 ~ 3.13
 
 
-## クローン方法
-- 以下のコマンドを実行して, ホームディレクトリにクローンしてください.
+## 準備
+- 以下のコマンドをホームディレクトリに上から順に実行してください.
  
   ```
-  git clone https://github.com/ReotoKoya/robosys2025.git
-  ``` 
-
+  $ git clone https://github.com/ReotoKoya/robosys2025.git
+  $ cd robosys2025
+  $ chmod +x as_f
+  ```
 
 ## 使用方法
 - 正の整数を入力してください.
