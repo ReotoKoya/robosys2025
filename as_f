@@ -19,6 +19,9 @@ for line in sys.stdin:
         parts = line.split()
         
         try:
+            for p in parts:
+                float(p)
+          
             if len(parts) != 2:
 
                 sys.exit(2)
