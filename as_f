@@ -4,37 +4,5 @@
 
 import sys
 
-def prime_factorization(n):
-    factors = []
-
-    while n % 2 == 0:
-        factors.append(2)
-        n //= 2
-
-    i = 3
-    while i * i <= n:
-        while n % i == 0:
-            factors.append(i)
-            n //= i
-        i += 2
-
-    if n > 1:
-        factors.append(n)
-
-    return factors
-
 for line in sys.stdin:
-    tokens = line.strip().split()
-
-    for token in tokens:
-        try:
-            n = int(token)
-
-            if n <= 1:
-                 continue
-
-            result = prime_factorization(n)
-            print(" ".join(map(str, result)))
-
-        except ValueError:
-            continue
+    
