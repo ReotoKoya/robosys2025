@@ -12,12 +12,14 @@ def relative_error(true_value, measured_value):
 
     return abs(measured_value - true_value) / abs(true_value)
 
+results = []
+
 for line in sys.stdin:
         
         parts = line.split()
         
         try:
-            if len(parts) < 2:
+            if len(parts) != 2:
 
                 sys.exit(2)
 
@@ -27,8 +29,11 @@ for line in sys.stdin:
 
             result = relative_error(true_value, measured_value)
         
-            print(f"{result:.2%}") 
+            results.append(f"{result:.2%}") 
    
         except (ValueError):
 
             sys.exit(3)
+
+for r in results:
+    print(r)
