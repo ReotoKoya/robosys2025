@@ -25,6 +25,6 @@ for line in sys.stdin:
             
     except ValueError:
 
-    print("エラー: 数値を入力してください。", file=sys.stderr)
+        print("エラー: 数値を入力してください。", file=sys.stderr)
 
     sys.exit(1)
