@@ -20,6 +20,9 @@ for line in sys.stdin:
         
         parts = line.split()
         
+	if len(parts) < 2:
+            continue
+
         true_value = float(parts[0])
         measured_value = float(parts[1])
             
