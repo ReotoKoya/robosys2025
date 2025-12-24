@@ -4,5 +4,27 @@
 
 import sys
 
+def relative_error(true_value, measured_value):
+
+    if true_value == 0:
+
+        print("エラー：真値に０を入力しないで下さい。", file=sys.stderr)
+
+        sys.exit(1)
+
+    return abs(measured_value - true_value) / abs(true_value)
+
 for line in sys.stdin:
-    
+
+    try:
+        
+        parts = line.split()
+        
+        true_value = float(parts[0])
+        measured_value = float(parts[1])
+            
+    except ValueError:
+
+    print("エラー: 数値を入力してください。", file=sys.stderr)
+
+    sys.exit(1)
