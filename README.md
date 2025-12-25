@@ -84,7 +84,7 @@
   2
   ```
 
-  - 文字などの数値以外を入力された場合、終了ステータスは３になります.
+  - 文字などの数値以外を入力した場合、終了ステータスは３になります.
 
   ```
   $ echo "a 10" | ./rel_er
@@ -92,15 +92,17 @@
   3 
   ```
 
-
-
 ## テスト環境
 - Ubuntu 22.04 LTS on Windows
+- GitHub Actions
 
 ## 著作権 ・ライセンス
 - このソフトウェアパッケージは, 3条項BSDライセンスの下, 再頒布および使用が許可されます．
 - @ 2025 Reoto Koya
 
 ## 参考資料
-- [ 第 6 回 : ソフトウェアのテスト]  https://ryuichiueda.github.io/slides_marp/robosys2025/lesson6.html
-- [ 第 7 回 : GitHub でのテスト ] https://ryuichiueda.github.io/slides_marp/robosys2025/lesson7.html
+- [第 6 回 : ソフトウェアのテスト](https://ryuichiueda.github.io/slides_marp/robosys2025/lesson6.html)
+- [第 7 回 : GitHub でのテスト] (https://ryuichiueda.github.io/slides_marp/robosys2025/lesson7.html)
+- [Pythonのappend()でリストに要素を追加する](https://www.headboost.jp/python-append/)
+- [Pythonのcontinue文について解説！break文との違いは](https://www.tech-teacher.jp/blog/python-continue/)
+- [Pythonのf文字列（f-strings）とは？わかりやすく解説します！](https://it-infomation.com/python-f-strings/)
