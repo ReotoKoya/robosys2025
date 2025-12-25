@@ -16,6 +16,12 @@ out=$(echo -e "10 10.5\n9 9.5" | ./rel_er)
 expected=$'5.00%\n5.56%'
 [ "${out}" = "$expected"  ] || ng "$LINENO"
 
+echo -e "10 9\n10 9.5\n10 10.5\n10 11" > data.txt
+out=$(./rel_er < data.txt)
+expected=$'10.00%\n5.00%\n5.00%\n10.00%'
+[ "${out}" = "$expected"  ] || ng "$LINENO"
+rm data.txt
+
 out=$(echo "0 1" | ./rel_er )
 [ "$?" = 1 ] || ng "$LINEO"
 [ "${out}" = "" ] || ng "$LINENO"
@@ -51,6 +57,18 @@ out=$(echo "0" | ./rel_er )
 out=$(echo "1/2 1" | ./rel_er )
 [ "$?" = 3 ] || ng "$LINEO"
 [ "${out}" = "" ] || ng "$LINENO"
+
+echo -e "10 9\n10 9.5\n10 10.5\n10" > data.txt
+out=$(./rel_er < data.txt)
+[ "$?" = 2 ] || ng "$LINEO"
+[ "${out}" = ""  ] || ng "$LINENO"
+rm data.txt
+
+echo -e "10 9\n10 9.5\n10 10.5\n10 q" > data.txt
+out=$(./rel_er < data.txt)
+[ "$?" = 3 ] || ng "$LINEO"
+[ "${out}" = ""  ] || ng "$LINENO"
+rm data.txt
 
 [ "${res}" = 0 ] && echo OK
 
