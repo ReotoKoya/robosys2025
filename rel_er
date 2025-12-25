@@ -18,8 +18,6 @@ for line in sys.stdin:
         
         parts = line.split()
 
-        if not parts: continue
-
         try:
             for p in parts:
                 float(p)
