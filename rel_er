@@ -36,7 +36,7 @@ for line in sys.stdin:
         
             results.append(f"{result:.2%}") 
    
-        except (ValueError):
+        except ValueError:
 
             sys.exit(3)
 
