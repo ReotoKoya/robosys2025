@@ -44,6 +44,13 @@ out=$(echo "q 2" | ./rel_er )
 [ "$?" = 3 ] || ng "$LINEO"
 [ "${out}" = "" ] || ng "$LINENO"
 
+out=$(echo "0" | ./rel_er )
+[ "$?" = 2 ] || ng "$LINEO"
+[ "${out}" = "" ] || ng "$LINENO"
+
+out=$(echo "1/2 1" | ./rel_er )
+[ "$?" = 3 ] || ng "$LINEO"
+[ "${out}" = "" ] || ng "$LINENO"
 
 [ "${res}" = 0 ] && echo OK
 
