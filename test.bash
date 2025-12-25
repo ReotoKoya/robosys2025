@@ -12,6 +12,9 @@ res=0
 out=$(echo "10 10.5" | ./rel_er)
 [ "${out}" = "5.00%" ] || ng "$LINENO"
 
+out=$(echo "-1.3 -1" | ./rel_er)
+[ "${out}" = "23.08%" ] || ng "$LINENO"
+
 out=$(echo -e "10 10.5\n9 9.5" | ./rel_er)
 expected=$'5.00%\n5.56%'
 [ "${out}" = "$expected"  ] || ng "$LINENO"
