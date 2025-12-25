@@ -1,0 +1,44 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2025 Reoto Koya s24C1053JD@s.chibakoudai.jp
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+
+def relative_error(true_value, measured_value):
+
+    if true_value == 0:
+
+        sys.exit(1)
+
+    return abs(measured_value - true_value) / abs(true_value)
+
+results = []
+
+for line in sys.stdin:
+        
+        parts = line.split()
+
+        if not parts: continue
+
+        try:
+            for p in parts:
+                float(p)
+          
+            if len(parts) != 2:
+
+                sys.exit(2)
+
+           
+            true_value = float(parts[0])
+            measured_value = float(parts[1])
+
+            result = relative_error(true_value, measured_value)
+        
+            results.append(f"{result:.2%}") 
+   
+        except (ValueError):
+
+            sys.exit(3)
+
+for r in results:
+    print(r)
