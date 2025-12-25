@@ -103,6 +103,6 @@
 
 ## 参考資料
 - [第 6 回 : ソフトウェアのテスト](https://ryuichiueda.github.io/slides_marp/robosys2025/lesson6.html)
-- [第 7 回 : GitHub でのテスト] (https://ryuichiueda.github.io/slides_marp/robosys2025/lesson7.html)
+- [第 7 回 : GitHub でのテスト](https://ryuichiueda.github.io/slides_marp/robosys2025/lesson7.html)
 - [Pythonのappend()でリストに要素を追加する](https://www.headboost.jp/python-append/)
 - [Pythonのf文字列（f-strings）とは？わかりやすく解説します！](https://it-infomation.com/python-f-strings/)
