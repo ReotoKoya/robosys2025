@@ -1,5 +1,5 @@
 #!/bin/bash -xv
-# SPDX-FileCopyrightText: 2025 Reoto Koya <s24c1053jd@s.chibakoudai.jp>
+# SPDX-FileCopyrightText: 2025 Reoto Koya
 # SPDX-License-Identifier: BSD-3-Clause
 
 ng () {
