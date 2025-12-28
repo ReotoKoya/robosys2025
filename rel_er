@@ -5,19 +5,14 @@
 import sys
 
 def relative_error(true_value, measured_value):
-
     if true_value == 0:
-
         sys.exit(1)
-
     return abs(measured_value - true_value) / abs(true_value)
 
 results = []
 
-for line in sys.stdin:
-        
+for line in sys.stdin:        
         parts = line.split()
-
         try:
             for p in parts:
                 float(p)
@@ -26,16 +21,13 @@ for line in sys.stdin:
 
                 sys.exit(2)
 
-           
             true_value = float(parts[0])
             measured_value = float(parts[1])
 
             result = relative_error(true_value, measured_value)
-        
             results.append(f"{result:.2%}") 
    
         except ValueError:
-
             sys.exit(3)
 
 for r in results:
