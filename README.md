@@ -87,7 +87,7 @@
     ```
 
 ## テスト環境
-- Local: Ubuntu-latest
+- Local: Ubuntu-latest LTS on Windows 11
 - GitHub Actions: Ubuntu 22.04
 
 ## 著作権 ・ライセンス
