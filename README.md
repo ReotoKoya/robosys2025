@@ -87,8 +87,8 @@
     ```
 
 ## テスト環境
-- Ubuntu 22.04 LTS on Windows
-- GitHub Actions on Windows
+- Local: Ubuntu-latest
+- GitHub Actions: Ubuntu 22.04
 
 ## 著作権 ・ライセンス
 - このソフトウェアパッケージは, 3条項BSDライセンスの下, 再頒布および使用が許可されます．
